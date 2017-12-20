@@ -8,8 +8,8 @@ build: copy-assets
 
 copy-assets:
 	@cp login.html docs/
-	@cp css/login.css docs/
-	@cp images/user.png docs/
+	@cp css/login.css .
+	@cp images/user.png .
 
 run:
 	@echo "**************************************************"

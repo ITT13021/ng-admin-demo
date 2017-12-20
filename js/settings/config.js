@@ -1,6 +1,6 @@
 export default function (nga, admin) {
 
-    var settings = admin.getEntity('settings');
+    const settings = admin.getEntity('settings');
 
     settings.editionView()
         .title('Site Configuration')
@@ -10,7 +10,7 @@ export default function (nga, admin) {
     settings.showView()
         .title('Site Configuration')
         .fields(settings.editionView().fields())
-        .actions(['edit']);;
+        .actions(['edit']);
 
     return settings;
 }
